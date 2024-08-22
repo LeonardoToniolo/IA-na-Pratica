@@ -26,7 +26,7 @@ yahoo_finance_tools = Tool(
 )
 
 # importing openai llm - gpt
-os.environ['OPENAI_API_KEY'] = st.secrets('OPENAI_API_KEY')
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 llm = ChatOpenAI(model='gpt-3.5-turbo')
 
 stockPriceAnalyst = Agent(
